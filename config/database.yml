@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: full_stack_demo_production
-  username: full_stack_demo
-  password: <%= ENV['FULL_STACK_DEMO_DATABASE_PASSWORD'] %>
+  password: <%= ENV['DATABASE_URL'] %>
